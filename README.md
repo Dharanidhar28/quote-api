@@ -1,42 +1,142 @@
-# quote-api
+# Quote-manager-Api
 A simple REST API for managing inspirational quotes using Flask
-# Quote API Documentation
+# Quote Manager (Flask + SQLite)
+
+A simple **Quote Manager web application** built using **Python Flask** and **SQLite**.
+The application allows users to **add, view, update, and delete quotes** through a web interface.
+
+This project demonstrates basic **backend development concepts**, including:
+
+* REST API design
+* Flask web framework
+* SQLite database integration
+* CRUD operations
+* Frontend and backend interaction
+
+---
+
+## Features
+
+* Add a new quote
+* View all quotes
+* Update an existing quote
+* Delete quotes
+* Generate motivational quotes
+* Persistent storage using SQLite database
+
+---
+
+## Project Structure
+
+```
+quote-api/
+│
+├── app.py
+├── quotes.db
+├── requirements.txt
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── script.js
+│
+└── README.md
+```
+
+### File Descriptions
+
+| File                   | Description                                                 |
+| ---------------------- | ----------------------------------------------------------- |
+| `app.py`               | Main Flask application containing routes and database logic |
+| `quotes.db`            | SQLite database storing quotes                              |
+| `templates/index.html` | Web page UI                                                 |
+| `static/script.js`     | JavaScript for interacting with the API                     |
+| `requirements.txt`     | Python dependencies                                         |
+
+---
 
 ## Installation
-To install the Quote API project, clone the repository and install the dependencies:
 
-```bash
-git clone https://github.com/Dharanidhar28/quote-api.git
-cd quote-api
-npm install
-Usage
-To run the project locally, use the following command:
+Clone the repository:
 
-bash
-npm start
-Visit http://localhost:3000 to see the API in action.
+```
+git clone https://github.com/YOUR_USERNAME/quote-manager-api.git
+```
 
-API Endpoints
-1. Get a Random Quote
-Endpoint: /api/quote
-Method: GET
-Description: Returns a random quote.
-2. Get a Quote by ID
-Endpoint: /api/quote/:id
-Method: GET
-Description: Returns a quote by its ID.
-3. Create a New Quote
-Endpoint: /api/quote
-Method: POST
-Description: Adds a new quote to the collection.
-Request Body: { "text": "string", "author": "string" }
-4. Update a Quote
-Endpoint: /api/quote/:id
-Method: PUT
-Description: Updates an existing quote by its ID.
-Request Body: { "text": "string", "author": "string" }
-5. Delete a Quote
-Endpoint: /api/quote/:id
-Method: DELETE
-Description: Deletes a quote by its ID.
-Feel free to contribute to the project!
+Navigate to the project folder:
+
+```
+cd quote-manager-api
+```
+
+Install dependencies:
+
+```
+pip install flask
+```
+
+---
+
+## Running the Application
+
+Start the Flask server:
+
+```
+python app.py
+```
+
+Open your browser and go to:
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## API Endpoints
+
+| Method | Endpoint          | Description                 |
+| ------ | ----------------- | --------------------------- |
+| GET    | `/quotes`         | Get all quotes              |
+| POST   | `/quotes`         | Add a new quote             |
+| PUT    | `/quotes/<id>`    | Update a quote              |
+| DELETE | `/quotes/<id>`    | Delete a quote              |
+| GET    | `/generate-quote` | Generate motivational quote |
+
+---
+
+## Technologies Used
+
+* Python
+* Flask
+* SQLite
+* HTML
+* JavaScript
+
+---
+
+## Learning Goals
+
+This project was created to practice:
+
+* Backend development using Flask
+* API development
+* Database operations
+* Full-stack communication between frontend and backend
+
+---
+
+## Future Improvements
+
+* Add user authentication
+* Improve UI styling
+* Add search functionality
+* Integrate AI-generated quotes using external APIs
+
+---
+
+## Author
+Developed as a learning project for backend development and API design.
+
+Developed as a learning project for backend development and API design.
