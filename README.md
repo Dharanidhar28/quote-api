@@ -137,6 +137,5 @@ This project was created to practice:
 ---
 
 ## Author
-Developed as a learning project for backend development and API design.
 
 Developed as a learning project for backend development and API design.
